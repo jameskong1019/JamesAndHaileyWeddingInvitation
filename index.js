@@ -6,12 +6,10 @@ const app = express();
 
 // app.use(bodyParser.json());
 // app.use(cors());
-app.use(express.static('views'));
-
 const port = process.env.Port || 3000;
 
 app.get('/', function(req, res) {
-    res.send('main', '/index');
+    res.send('test');
 })
 
 app.listen(port, () => console.log(`server started on port ${port}`));
