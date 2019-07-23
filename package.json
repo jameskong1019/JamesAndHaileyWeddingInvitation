@@ -4,8 +4,7 @@
   "description": "James And Hailey Wedding Invitation",
   "main": "index.js",
   "scripts": {
-    "start": "node server/index.js",
-    "dev": "nodemon server/index.js"
+    "start": "node server/index.js"
   },
   "author": "James And Hailey",
   "license": "MIT",
