@@ -1,15 +1,13 @@
 const express = require('express');
-// const bodyParser = require('body-parser');
-// const cors = require('cors');
-
 const app = express();
+const path = require('path');
 
-// app.use(bodyParser.json());
-// app.use(cors());
-const port = process.env.Port || 3000;
+app.use(express.static('views'));
 
 app.get('/', function(req, res) {
-    res.send('test');
-})
+    res.sendFile(path.join(__dirname, 'views/index.html'));
+});
 
-app.listen(port, () => console.log(`server started on port ${port}`));
+app.listen(process.env.PORT || 4000, function(){
+    console.log('Your node js server is running');
+});
