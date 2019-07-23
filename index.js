@@ -8,7 +8,7 @@ const app = express();
 // app.use(cors());
 app.use(express.static('views'));
 
-const port = process.env.Port || 5000;
+const port = process.env.Port;
 
 app.get('/', function(req, res) {
     res.send('main', '/index.cshtml');
