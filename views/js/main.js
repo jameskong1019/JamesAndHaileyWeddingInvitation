@@ -5,7 +5,7 @@ $(document).ready(function() {
         thumbItem:4,
         slideMargin: 0,
         speed:2000,
-        auto:true,
+        auto:false,
         loop:true,
         freeMove: true,
         thumbMargin: 0,
