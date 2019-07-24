@@ -44,7 +44,7 @@ body .main .main-image-container .main-image {
 }
 
 body .main .greeting-container {
-  padding: 10px;
+  padding: 20px 10px;
   background: rgba(254, 226, 93, 0.5);
   border: 2px solid rgba(254, 226, 93, 0.5);
   outline: 1px solid #fff;
@@ -70,6 +70,14 @@ body .main .greeting-container .opening-statement {
 }
 
 body .main .greeting-container .intro-people {
+  font-weight: 600;
+}
+
+body .main .greeting-container .time-location-container {
+  margin: 10px;
+}
+
+body .main .greeting-container .time-location-container .time, body .main .greeting-container .time-location-container .location {
   font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */
