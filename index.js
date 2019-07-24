@@ -8,6 +8,6 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, 'views/index.html'));
 });
 
-app.listen(process.env.PORT || 4000, function(){
-    console.log('Your node js server is running');
-});
+const port = process.env.PORT || 4000;
+
+app.listen(port, () => console.log(`server started on port ${port}`));

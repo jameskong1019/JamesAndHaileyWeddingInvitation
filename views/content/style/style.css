@@ -1,4 +1,16 @@
+body {
+  background-image: url("/content/images/background.png");
+}
+
 body .header {
+  text-align: center;
+  margin: 10px 0px 5px 0px;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 25px;
+}
+
+body .main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,13 +25,7 @@ body .header {
       align-content: center;
 }
 
-body .header .title {
-  text-align: center;
-  font-size: 20px;
-  margin: 10px 0px;
-}
-
-body .header .main-image-container {
+body .main .main-image-container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,19 +36,40 @@ body .header .main-image-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 5px 0px 10px 0px;
 }
 
-body .header .main-image-container .main-image {
+body .main .main-image-container .main-image {
   width: 90%;
 }
 
-body .main {
-  margin: 30px 10px;
-  padding: 0 10px;
+body .main .greeting-container {
+  padding: 10px;
+  background: rgba(254, 226, 93, 0.5);
+  border: 2px solid rgba(254, 226, 93, 0.5);
+  outline: 1px solid #fff;
+  outline-offset: -10px;
+  text-align: center;
 }
 
-body .main .opening-statement {
-  text-align: center;
-  background-color: #c9c9c9;
+body .main .greeting-container .title {
+  font-size: 20px;
+  margin: 10px 0px;
+  font-style: italic;
+}
+
+body .main .greeting-container .greetings {
+  font-style: italic;
+  font-weight: bold;
+}
+
+body .main .greeting-container .opening-statement {
+  margin: 20px 0px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+body .main .greeting-container .intro-people {
+  font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */
