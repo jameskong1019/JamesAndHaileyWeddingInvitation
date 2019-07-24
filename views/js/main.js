@@ -1,17 +1,17 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $('#image-gallery').lightSlider({
-        gallery:true,
-        item:1,
-        thumbItem:4,
+        gallery: true,
+        item: 1,
+        thumbItem: 4,
         slideMargin: 0,
-        speed:2000,
-        auto:false,
-        loop:true,
-        freeMove: true,
+        speed: 500,
+        auto: true,
+        loop: true,
+        freeMove: false,
         thumbMargin: 0,
         vThumbWidth: 100,
-        onSliderLoad: function() {
+        onSliderLoad: function () {
             $('#image-gallery').removeClass('cS-hidden');
-        }  
+        }
     });
 });
