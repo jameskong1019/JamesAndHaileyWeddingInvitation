@@ -4,14 +4,12 @@ $(document).ready(function() {
         item:1,
         thumbItem:4,
         slideMargin: 0,
-        speed:500,
-        auto:false,
-        loop:false,
+        speed:2000,
+        auto:true,
+        loop:true,
         freeMove: true,
         thumbMargin: 0,
         vThumbWidth: 100,
-        prevHtml: "",
-        nextHtml: "",
         onSliderLoad: function() {
             $('#image-gallery').removeClass('cS-hidden');
         }  
