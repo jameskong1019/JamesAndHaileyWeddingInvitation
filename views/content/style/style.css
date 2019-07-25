@@ -74,6 +74,11 @@ body .main .greeting-container .intro-people {
   font-weight: 600;
 }
 
+body .main .greeting-container .intro-people span {
+  font-size: 10px;
+  margin-right: 5px;
+}
+
 body .main .greeting-container .time-location-container {
   margin: 10px;
 }
