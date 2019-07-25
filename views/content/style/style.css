@@ -78,8 +78,10 @@ body .main .greeting-container .time-location-container {
   margin: 10px;
 }
 
-body .main .greeting-container .time-location-container .time, body .main .greeting-container .time-location-container .location {
+body .main .greeting-container .time-location-container .time,
+body .main .greeting-container .time-location-container .location {
   font-weight: 600;
+  word-break: keep-all;
 }
 
 body .gallery-container .gallery-title {
@@ -87,9 +89,50 @@ body .gallery-container .gallery-title {
   font-size: 20px;
   margin: 10px 0px;
   font-style: italic;
+  text-decoration: underline;
+  font-weight: 600;
 }
 
 body .gallery-container .image-gallery-container {
   margin: 0 10px;
+}
+
+body .location-map .map-title {
+  text-align: center;
+  font-size: 20px;
+  margin: 10px 0px;
+  font-style: italic;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+body .location-map #nmap {
+  width: 90%;
+  height: 300px;
+  margin: 0 auto;
+}
+
+body .location-map .map_intro {
+  margin-bottom: 10px;
+  font-size: 12px;
+  padding: 0 10px;
+  font-weight: 600;
+}
+
+body .location-map .map_intro .more_map {
+  font-size: 12px;
+  color: #898989;
+  text-decoration: underline;
+}
+
+body .location-map .time-location-container {
+  margin: 10px;
+  text-align: center;
+}
+
+body .location-map .time-location-container .time,
+body .location-map .time-location-container .location {
+  font-weight: 600;
+  word-break: keep-all;
 }
 /*# sourceMappingURL=style.css.map */
