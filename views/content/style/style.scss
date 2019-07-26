@@ -14,7 +14,7 @@ body {
 
 body {
     position: relative;
-     background-image: url("/content/images/background.png");
+    background-image: url("/content/images/background.png");
     color: black;
     overflow-x: hidden;
 
@@ -155,7 +155,7 @@ body {
 
                 &.sms {
                     a {
-                        color: #28a745 !important ;
+                        color: #28a745 !important;
                     }
                 }
 
@@ -237,6 +237,22 @@ body {
                     width: 90%;
                 }
             }
+        }
+    }
+
+    .footer {
+        text-align: center;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .copyright {
+            word-break: keep-all;
+            font-size: 12px;
+            text-align: center;
+            line-height: 20px;
+            font-weight: 600;
         }
     }
 }
