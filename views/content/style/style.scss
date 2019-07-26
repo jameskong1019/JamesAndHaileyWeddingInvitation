@@ -222,21 +222,22 @@ body {
             }
 
         }
+    }
 
-        .calendar {
-            margin: 10px 0px;
-            .calendar-header {
-                font-family: $title-robster;
-                font-size: 30px;
-                text-align: center;
-                margin: 10px 0px;
-                text-decoration: underline;
-            }
+    .calendar {
+        margin: 30px 0px;
+        text-align: center;
 
-            .calendar-check {
-                .calendar-image {
-                    width: 90%;
-                }
+        .calendar-header {
+            font-family: $title-robster;
+            font-size: 30px;
+            margin: 10px 0px 0px 0px;
+            text-decoration: underline;
+        }
+
+        .calendar-check {
+            .calendar-image {
+                width: 90%;
             }
         }
     }
