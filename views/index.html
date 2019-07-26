@@ -10,13 +10,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- main style css -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Abril+Fatface|Lobster|Nanum+Gothic+Coding|Nanum+Pen+Script&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="content/style/style.css">
     <link rel="stylesheet" href="script/lightslider/css/lightslider.css">
+    <link rel="stylesheet" href="script/sakura/jquery-sakura.css">
 </head>
 
 <body>
     <div class="header">
-        Invitation
+        <a href="" class="typewrite" data-period="2000"
+            data-type='[ "멋진 신랑 정규와", "사랑스런 신부 하람의", "가을 날의 결혼식에", "초대합니다!" ]'>
+            <span class="wrap"></span>
+        </a>
     </div>
     <div class="main">
         <div class="main-image-container">
@@ -77,7 +84,18 @@
         </div>
     </div>
     <div class="contact">
-        <div class="">
+        <div class="share kakao-talk">
+            <a id="kakao-link-btn" href="javascript:;">
+                <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" />
+            </a>
+        </div>
+        <div class="share sms">
+
+        </div>
+        <div class="share facebook">
+
+        </div>
+        <div class="share instagram">
 
         </div>
     </div>
@@ -98,6 +116,14 @@
             <div class="location">
                 베스트웨스턴로얄호텔 그랜드볼룸홀
             </div>
+            <div class="calendar">
+                <div class="calendar-header">
+                    Save the Date!
+                </div>
+                <div class="calendar-check">
+                    <img class="calendar-image" src="content/images/calendar-check.png" />
+                </div>
+            </div>
         </div>
     </div>
     <div class="footer">
@@ -116,8 +142,10 @@
     </script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="script/lightslider/js/lightslider.min.js"></script>
-    <!-- mn7cwsrvym  -->
-    <script src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=0f283b0774"></script>
+    <script src="script/sakura/jquery-sakura.min.js"></script>
+    <!-- mn7cwsrvym  / 0f283b0774-->
+    <script src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=mn7cwsrvym"></script>
+    <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

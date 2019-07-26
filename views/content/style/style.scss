@@ -1,12 +1,30 @@
+$main-font: 'Nanum Gothic Coding',
+monospace;
+$main-cursive: 'Nanum Pen Script',
+cursive;
+$title: 'Abril Fatface',
+cursive;
+$title-robster: 'Lobster',
+cursive;
+
 body {
     background-image: url("/content/images/background.png");
+    color: black;
 
     .header {
         text-align: center;
         margin: 10px 0px 5px 0px;
-        font-style: italic;
         font-weight: 600;
         font-size: 25px;
+        font-family: $main-cursive;
+
+        a,
+        .wrap {
+            color: black;
+            text-decoration: none;
+            font-size: 25px;
+            font-weight: 500;
+        }
     }
 
     .main {
@@ -78,10 +96,10 @@ body {
 
     .gallery-container {
         .gallery-title {
+            font-family: $title-robster;
+            font-size: 30px;
             text-align: center;
-            font-size: 20px;
             margin: 10px 0px;
-            font-style: italic;
             text-decoration: underline;
             font-weight: 600;
         }
@@ -93,10 +111,10 @@ body {
 
     .location-map {
         .map-title {
+            font-family: $title-robster;
+            font-size: 30px;
             text-align: center;
-            font-size: 20px;
             margin: 10px 0px;
-            font-style: italic;
             text-decoration: underline;
             font-weight: 600;
 
@@ -109,10 +127,10 @@ body {
         }
 
         .map_intro {
-            margin-bottom: 10px;
+            margin: 0px auto;
             font-size: 12px;
-            padding: 0 10px;
             font-weight: 600;
+            width: 90%;
 
             .more_map {
                 font-size: 12px;
@@ -129,6 +147,25 @@ body {
             .location {
                 font-weight: 600;
                 word-break: keep-all;
+            }
+
+        }
+
+        .calendar {
+            margin: 20px 10px 10px 10px;
+
+            .calendar-header {
+                font-family: $title-robster;
+                font-size: 30px;
+                text-align: center;
+                margin: 10px 0px;
+                text-decoration: underline;
+            }
+
+            .calendar-check {
+                .calendar-image {
+                    width: 90%;
+                }
             }
         }
     }
