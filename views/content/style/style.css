@@ -117,7 +117,7 @@ body .gallery-container .image-gallery-container {
   margin: 0 10px;
 }
 
-body .gallery-container .image-gallery-container .image-gallery li {
+body .gallery-container .image-gallery-container #image-gallery li {
   text-align: center;
 }
 
