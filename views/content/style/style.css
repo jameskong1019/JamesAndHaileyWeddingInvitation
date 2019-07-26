@@ -105,6 +105,10 @@ body .main .greeting-container .time-location-container .location {
   word-break: keep-all;
 }
 
+body .gallery-container {
+  margin: 50px 0px;
+}
+
 body .gallery-container .gallery-title {
   font-family: "Lobster", cursive;
   font-size: 30px;
@@ -218,7 +222,7 @@ body .location-map .time-location-container .location {
 }
 
 body .location-map .calendar {
-  margin: 20px 10px 10px 10px;
+  margin: 10px 0px;
 }
 
 body .location-map .calendar .calendar-header {

@@ -102,6 +102,8 @@ body {
     }
 
     .gallery-container {
+        margin: 50px 0px;
+        
         .gallery-title {
             font-family: $title-robster;
             font-size: 30px;
@@ -222,8 +224,7 @@ body {
         }
 
         .calendar {
-            margin: 20px 10px 10px 10px;
-
+            margin: 10px 0px;
             .calendar-header {
                 font-family: $title-robster;
                 font-size: 30px;
