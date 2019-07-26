@@ -152,25 +152,27 @@ body .share .share-container .share-item i {
   font-size: 50px;
 }
 
-body .share .share-container .share-item.kakaotalk {
-  color: #ffc107;
+body .share .share-container .share-item.kakaotalk a {
+  color: #ffc107 !important;
 }
 
-body .share .share-container .share-item.sms {
-  color: #28a745;
+body .share .share-container .share-item.sms a {
+  color: #28a745 !important;
 }
 
-body .share .share-container .share-item.facebook {
-  color: #007bff;
+body .share .share-container .share-item.facebook a {
+  color: #007bff !important;
 }
 
-body .share .share-container .share-item.instagram {
-  color: #e83e8c;
+body .share .share-container .share-item.instagram a {
+  color: #e83e8c !important;
 }
 
 body .share .share-container .share-item .label {
-  font-size: 12px;
+  font-size: 10px;
   color: black;
+  word-break: keep-all;
+  margin-top: 10px;
 }
 
 body .location-map .map-title {

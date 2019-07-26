@@ -142,24 +142,34 @@ body {
                 }
 
                 &.kakaotalk {
-                    color: #ffc107;
+                    a {
+                        color: #ffc107 !important;
+                    }
                 }
 
                 &.sms {
-                    color: #28a745;
+                    a {
+                        color: #28a745 !important ;
+                    }
                 }
 
                 &.facebook {
-                    color: #007bff;
+                    a {
+                        color: #007bff !important;
+                    }
                 }
 
                 &.instagram {
-                    color: #e83e8c;
+                    a {
+                        color: #e83e8c !important;
+                    }
                 }
 
                 .label {
-                    font-size: 12px;
+                    font-size: 10px;
                     color: black;
+                    word-break: keep-all;
+                    margin-top: 10px;
                 }
             }
         }

@@ -4,18 +4,18 @@ $(document).ready(function () {
     $('body').sakura('start', {
         blowAnimations: [
             'blow-soft-left',
-        ],                   // Horizontal movement animation names
+        ], // Horizontal movement animation names
         className: 'sakura', // Class name to use
-        fallSpeed: 1,        // Factor for petal fall speed
-        maxSize: 14,         // Maximum petal size
-        minSize: 9,          // Minimum petal size
-        newOn: 300,          // Interval after which a new petal is added
-        swayAnimations: [    // Swaying animation names
+        fallSpeed: 1, // Factor for petal fall speed
+        maxSize: 14, // Maximum petal size
+        minSize: 9, // Minimum petal size
+        newOn: 300, // Interval after which a new petal is added
+        swayAnimations: [ // Swaying animation names
             'sway-1'
         ]
     });
+
     typewriter();
-    kakaoInit();
 
     $('#image-gallery').lightSlider({
         gallery: true,
@@ -47,6 +47,35 @@ $(document).ready(function () {
             map: map,
             position: weddingLocation
         });
+
+    kakaoInit();
+
+    $("a[data-toggle='sns_share']").click(function (e) {
+        e.preventDefault();
+        const current_url = "http://www.jamesloveshailey.com";
+        var _this = $(this);
+        var sns_type = _this.attr('data-service');
+        var href = current_url;
+        var title = _this.attr('data-title');
+        var loc = "";
+        var img = $("meta[name='og:image']").attr('content');
+
+        if (!sns_type || !href || !title) return;
+
+        if (sns_type == 'facebook') {
+            loc = '//www.facebook.com/sharer/sharer.php?u=' + href + '&t=' + title;
+        } else if (sns_type == 'kakaostory') {
+            loc = 'https://story.kakao.com/share?url=' + encodeURIComponent(href);
+        } else if ( sns_type == 'band' ) {
+			loc = 'http://www.band.us/plugin/share?body='+encodeURIComponent(title)+'%0A'+encodeURIComponent(href);
+		}
+        else {
+            return false;
+        }
+
+        window.open(loc);
+        return false;
+    });
 
 });
 
