@@ -117,6 +117,10 @@ body .gallery-container .image-gallery-container {
   margin: 0 10px;
 }
 
+body .gallery-container .image-gallery-container .image-gallery li {
+  text-align: center;
+}
+
 body .share .share-title {
   font-family: "Nanum Pen Script", cursive;
   font-size: 30px;
