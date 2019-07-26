@@ -79,7 +79,7 @@
             // Get one random animation of each type and randomize fall time of the petals.
             var blowAnimation = options.blowAnimations[Math.floor(Math.random() * options.blowAnimations.length)];
             var swayAnimation = options.swayAnimations[Math.floor(Math.random() * options.swayAnimations.length)];
-            var fallTime = (Math.round(documentHeight * 0.007) + Math.random() * 5) * options.fallSpeed;
+            var fallTime = (Math.round(documentHeight * 0.007) + Math.random() * 5) * 3;
 
             var animations = 'fall ' + fallTime + 's linear 0s 1' + ', ' +
                 blowAnimation + ' ' + (((fallTime > 30 ? fallTime : 30) - 20) + getRandomInt(0, 20)) + 's linear 0s infinite' + ', ' +

@@ -7,9 +7,16 @@ cursive;
 $title-robster: 'Lobster',
 cursive;
 
+html,
 body {
-    background-image: url("/content/images/background.png");
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+     background-image: url("/content/images/background.png");
     color: black;
+    overflow-x: hidden;
 
     .header {
         text-align: center;
