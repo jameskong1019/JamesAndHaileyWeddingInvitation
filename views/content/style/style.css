@@ -70,14 +70,14 @@ body .main .greeting-container {
 }
 
 body .main .greeting-container .title {
-  font-size: 20px;
-  margin: 10px 0px;
-  font-style: italic;
+  font-size: 30px;
+  font-family: "Lobster", cursive;
 }
 
 body .main .greeting-container .greetings {
   font-style: italic;
-  font-weight: bold;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 45px;
 }
 
 body .main .greeting-container .opening-statement {

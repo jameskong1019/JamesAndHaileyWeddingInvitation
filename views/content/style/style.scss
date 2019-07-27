@@ -62,14 +62,14 @@ body {
             text-align: center;
 
             .title {
-                font-size: 20px;
-                margin: 10px 0px;
-                font-style: italic;
+                font-size: 30px;
+                font-family: $title-robster;
             }
 
             .greetings {
                 font-style: italic;
-                font-weight: bold;
+                font-family: $main-cursive;
+                font-size: 45px;
             }
 
             .opening-statement {

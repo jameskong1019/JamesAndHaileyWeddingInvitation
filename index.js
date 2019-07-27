@@ -4,7 +4,7 @@ const path = require('path');
 const favicon = require('serve-favicon');
 
 app.use(express.static(path.join(__dirname, 'views')));
-app.use(favicon(path.join(__dirname, 'views/content/images/icon', 'favicon.ico')))
+app.use(favicon(path.join(__dirname, 'views', 'favicon.ico')))
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, 'views/index.html'));
