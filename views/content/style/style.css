@@ -82,12 +82,13 @@ body .main .greeting-container .greetings {
 
 body .main .greeting-container .opening-statement {
   margin: 20px 0px;
-  font-size: 11px;
+  font-size: 15px;
   font-weight: 600;
 }
 
 body .main .greeting-container .intro-people {
   font-weight: 600;
+  font-size: 18px;
 }
 
 body .main .greeting-container .intro-people span {
