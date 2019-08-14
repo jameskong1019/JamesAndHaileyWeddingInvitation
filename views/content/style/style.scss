@@ -120,11 +120,10 @@ body {
         margin: 50px 0px;
 
         .gallery-title {
-            font-family: $title-robster;
+            font-family: $main-cursive;
             font-size: 30px;
             text-align: center;
-            margin: 10px 0px;
-            text-decoration: underline;
+            margin: 20px 0px;
         }
 
         .image-gallery-container {
@@ -143,7 +142,7 @@ body {
             font-family: $main-cursive;
             font-size: 30px;
             text-align: center;
-            margin: 10px 0px;
+            margin: 20px 0px;
         }
 
         .share-container {
@@ -200,11 +199,10 @@ body {
 
     .location-map {
         .map-title {
-            font-family: $title-robster;
+            font-family: $main-cursive;
             font-size: 30px;
             text-align: center;
-            margin: 10px 0px;
-            text-decoration: underline;
+            margin: 20px 0px;
         }
 
         #nmap {
@@ -244,10 +242,9 @@ body {
         text-align: center;
 
         .calendar-header {
-            font-family: $title-robster;
+            font-family: $main-cursive;
             font-size: 30px;
-            margin: 10px 0px;
-            text-decoration: underline;
+            margin: 20px 0px;
         }
 
         .calendar-check {
