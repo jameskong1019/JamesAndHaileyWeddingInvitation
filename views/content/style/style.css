@@ -59,36 +59,49 @@ body .main .main-image-container .main-image {
   width: 75%;
 }
 
-body .main .greeting-container {
+body .main .greeting-text-container {
+  text-align: center;
   padding: 20px 10px;
+  margin-top: 40px;
+}
+
+body .main .greeting-text-container .title {
+  font-size: 30px;
+  font-family: "Pinyon Script", cursive;
+}
+
+body .main .greeting-text-container .greetings {
+  font-family: "Stylish", sans-serif;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+body .main .greeting-text-container .greetings .big {
+  font-size: 40px;
+}
+
+body .main .greeting-text-container .opening-statement {
+  margin: 40px 0px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 2px;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+body .main .greeting-container {
+  padding: 50px 10px;
   margin: 10px;
-  background: rgba(254, 226, 93, 0.5);
+  background: rgba(255, 231, 114, 0.21);
   border: 2px solid rgba(254, 226, 93, 0.5);
   outline: 1px solid #fff;
   outline-offset: -10px;
   text-align: center;
 }
 
-body .main .greeting-container .title {
-  font-size: 30px;
-  font-family: "Lobster", cursive;
-}
-
-body .main .greeting-container .greetings {
-  font-style: italic;
-  font-family: "Nanum Pen Script", cursive;
-  font-size: 45px;
-}
-
-body .main .greeting-container .opening-statement {
-  margin: 20px 0px;
-  font-size: 15px;
-  font-weight: 600;
-}
-
 body .main .greeting-container .intro-people {
-  font-weight: 600;
-  font-size: 18px;
+  font-size: 13px;
+  line-height: 30px;
 }
 
 body .main .greeting-container .intro-people span {
@@ -111,7 +124,7 @@ body .gallery-container {
 }
 
 body .gallery-container .gallery-title {
-  font-family: "Lobster", cursive;
+  font-family: "Pinyon Script", cursive;
   font-size: 30px;
   text-align: center;
   margin: 10px 0px;
@@ -185,7 +198,7 @@ body .share .share-container .share-item .label {
 }
 
 body .location-map .map-title {
-  font-family: "Lobster", cursive;
+  font-family: "Pinyon Script", cursive;
   font-size: 30px;
   text-align: center;
   margin: 10px 0px;
@@ -228,7 +241,7 @@ body .calendar {
 }
 
 body .calendar .calendar-header {
-  font-family: "Lobster", cursive;
+  font-family: "Pinyon Script", cursive;
   font-size: 30px;
   margin: 10px 0px;
   text-decoration: underline;

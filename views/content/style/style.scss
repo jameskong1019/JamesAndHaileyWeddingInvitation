@@ -4,8 +4,9 @@ $main-cursive: 'Nanum Pen Script',
 cursive;
 $title: 'Abril Fatface',
 cursive;
-$title-robster: 'Lobster',
-cursive;
+$title-robster: 'Pinyon Script', cursive;
+$main-myeong: 'Nanum Myeongjo', serif;
+$main-stylish: 'Stylish', sans-serif;
 
 html,
 body {
@@ -52,14 +53,10 @@ body {
             }
         }
 
-        .greeting-container {
-            padding: 20px 10px;
-            margin: 10px;
-            background: rgba(254, 226, 93, 0.5);
-            border: 2px solid rgba(254, 226, 93, 0.5);
-            outline: 1px solid #fff;
-            outline-offset: -10px;
+        .greeting-text-container {
             text-align: center;
+            padding: 20px 10px;
+            margin-top: 40px;
 
             .title {
                 font-size: 30px;
@@ -67,20 +64,37 @@ body {
             }
 
             .greetings {
-                font-style: italic;
-                font-family: $main-cursive;
-                font-size: 45px;
+                font-family: $main-stylish;
+                font-size: 30px;
+                line-height: 40px;
+
+                .big {
+                    font-size: 40px;
+                }
             }
 
             .opening-statement {
-                margin: 20px 0px;
-                font-size: 15px;
-                font-weight: 600;
+                margin: 40px 0px;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 30px;
+                letter-spacing: 2px;
+                font-family: $main-myeong;
             }
+        }
+
+        .greeting-container {
+            padding: 50px 10px;
+            margin: 10px;
+            background: rgba(255, 231, 114, 0.21);
+            border: 2px solid rgba(254, 226, 93, 0.5);
+            outline: 1px solid #fff;
+            outline-offset: -10px;
+            text-align: center;
 
             .intro-people {
-                font-weight: 600;
-                font-size: 18px;
+                font-size: 13px;
+                line-height: 30px;
 
                 span {
                     font-size: 10px;
