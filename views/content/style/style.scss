@@ -4,9 +4,12 @@ $main-cursive: 'Nanum Pen Script',
 cursive;
 $title: 'Abril Fatface',
 cursive;
-$title-robster: 'Pinyon Script', cursive;
-$main-myeong: 'Nanum Myeongjo', serif;
-$main-stylish: 'Stylish', sans-serif;
+$title-robster: 'Pinyon Script',
+cursive;
+$main-myeong: 'Nanum Myeongjo',
+serif;
+$main-stylish: 'Stylish',
+sans-serif;
 
 html,
 body {
@@ -15,7 +18,7 @@ body {
 
 body {
     position: relative;
-    background-image: url("/content/images/background-new.png");
+    // background-image: url("/content/images/background-new.png");
     color: black;
     overflow-x: hidden;
 
@@ -53,10 +56,40 @@ body {
             }
         }
 
+        .main-greeting-container {
+            font-family: $main-myeong;
+            text-align: center;
+
+            .main-people {
+                font-family: $main-myeong;
+                letter-spacing: 3px;
+                margin: 20px 0;
+                font-weight: 600;
+
+                .and {
+                    font-weight: 500;
+                    font-size: 12px;
+                }
+
+                .sub-text {
+                    letter-spacing: 5px;
+                    margin-top: 5px;
+                    font-weight: 500;
+                    font-size: 12px;
+
+                }
+            }
+
+            .wedding-date {
+                font-size: 12px;
+                font-weight: 600;
+            }
+        }
+
         .greeting-text-container {
             text-align: center;
-            padding: 20px 10px;
-            margin-top: 40px;
+            padding: 0px 10px;
+            margin: 60px 0;
 
             .title {
                 font-size: 30px;
@@ -74,23 +107,61 @@ body {
             }
 
             .opening-statement {
-                margin: 40px 0px;
+                font-family: $main-myeong;
+                margin: 20px 0px;
                 font-size: 12px;
                 font-weight: 500;
                 line-height: 30px;
                 letter-spacing: 2px;
-                font-family: $main-myeong;
             }
         }
 
         .greeting-container {
-            padding: 50px 10px;
+            padding: 20px 10px;
             margin: 10px;
             background: rgba(255, 231, 114, 0.21);
             border: 2px solid rgba(254, 226, 93, 0.5);
             outline: 1px solid #fff;
             outline-offset: -10px;
             text-align: center;
+            display: flex;
+
+            .family-container {
+                flex: 1 0 50%;
+                font-family: $main-myeong;
+                letter-spacing: 7px;
+
+                .main {
+                    font-size: 15px;
+                    display: inline-block;
+                    margin-bottom: 20px;
+                    font-weight: 600;
+
+                    .prefix {
+                        font-size: 12px;
+                        margin-right: 10px;
+                        font-weight: 500;
+                        letter-spacing: 2px;
+                    }
+                }
+
+                .family {
+                    font-size: 15px;
+                    font-weight: 600;
+
+                    .father {
+                        margin-bottom: 10px;
+                    }
+
+                    .prefix {
+                        font-size: 12px;
+                        margin-right: 10px;
+                        font-weight: 500;
+                        letter-spacing: 2px;
+                    }
+                }
+
+            }
 
             .intro-people {
                 font-size: 13px;
@@ -117,7 +188,7 @@ body {
     }
 
     .gallery-container {
-        margin: 50px 0px;
+        margin: 80px 0px;
 
         .gallery-title {
             font-family: $main-cursive;
@@ -198,6 +269,8 @@ body {
     }
 
     .location-map {
+        margin: 80px 0px;
+
         .map-title {
             font-family: $main-cursive;
             font-size: 30px;
@@ -211,12 +284,22 @@ body {
             margin: 0 auto;
         }
 
-        .map_intro {
-            margin: 0px auto;
+        .map-button {
+            margin: 5px auto;
             font-size: 12px;
             font-weight: 600;
             width: 90%;
+            text-align: center;
+        }
 
+        .map_intro {
+            margin: 0px auto;
+            font-size: 12px;
+            font-weight: 500;
+            width: 90%;
+            font-family: $main-myeong;
+            color: #838383;
+            
             .more_map {
                 font-size: 12px;
                 color: #898989;
@@ -224,21 +307,69 @@ body {
             }
         }
 
+        .direction-container {
+            margin: 10px auto;
+            width: 90%;
+
+            .direction {
+                margin: 10px 0;
+
+                .dir-title {
+                    font-family: $main-myeong;
+                    font-weight: 600;
+                    font-size: 13px;
+                }
+
+                .dir-description {
+                    font-size: 12px;
+                    font-family: $main-myeong;
+                    color: #838383;
+                }
+            }
+        }
+
         .time-location-container {
             margin: 10px;
             text-align: center;
+            display: flex;
+            width: 90%;
+            margin: 5px auto;
 
-            .time,
-            .location {
-                font-weight: 600;
-                word-break: keep-all;
+            .location-container {
+                text-align: left;
+                flex: 1 0 60%;
+                margin: 20px 0 5px 0;
+
+                .time,
+                .location {
+                    font-weight: 600;
+                    font-size: 12px;
+                    font-family: $main-myeong;
+                    word-break: keep-all;
+                }
+
+                .address {
+                    font-weight: 500;
+                    font-size: 12px;
+                    font-family: $main-myeong;
+                }
             }
 
+            .call {
+                display: flex;
+                align-items: center;
+                margin: 20px 5px 5px 0;
+
+                i {
+                    color: #838383;
+                    font-size: 20px;
+                }
+            }
         }
     }
 
     .calendar {
-        margin: 30px 0px;
+        margin: 60px 0px;
         text-align: center;
 
         .calendar-header {

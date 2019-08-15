@@ -5,7 +5,6 @@ body {
 
 body {
   position: relative;
-  background-image: url("/content/images/background-new.png");
   color: black;
   overflow-x: hidden;
 }
@@ -59,10 +58,39 @@ body .main .main-image-container .main-image {
   width: 75%;
 }
 
+body .main .main-greeting-container {
+  font-family: "Nanum Myeongjo", serif;
+  text-align: center;
+}
+
+body .main .main-greeting-container .main-people {
+  font-family: "Nanum Myeongjo", serif;
+  letter-spacing: 3px;
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+body .main .main-greeting-container .main-people .and {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+body .main .main-greeting-container .main-people .sub-text {
+  letter-spacing: 5px;
+  margin-top: 5px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+body .main .main-greeting-container .wedding-date {
+  font-size: 12px;
+  font-weight: 600;
+}
+
 body .main .greeting-text-container {
   text-align: center;
-  padding: 20px 10px;
-  margin-top: 40px;
+  padding: 0px 10px;
+  margin: 60px 0;
 }
 
 body .main .greeting-text-container .title {
@@ -81,22 +109,63 @@ body .main .greeting-text-container .greetings .big {
 }
 
 body .main .greeting-text-container .opening-statement {
-  margin: 40px 0px;
+  font-family: "Nanum Myeongjo", serif;
+  margin: 20px 0px;
   font-size: 12px;
   font-weight: 500;
   line-height: 30px;
   letter-spacing: 2px;
-  font-family: "Nanum Myeongjo", serif;
 }
 
 body .main .greeting-container {
-  padding: 50px 10px;
+  padding: 20px 10px;
   margin: 10px;
   background: rgba(255, 231, 114, 0.21);
   border: 2px solid rgba(254, 226, 93, 0.5);
   outline: 1px solid #fff;
   outline-offset: -10px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .main .greeting-container .family-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  font-family: "Nanum Myeongjo", serif;
+  letter-spacing: 7px;
+}
+
+body .main .greeting-container .family-container .main {
+  font-size: 15px;
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+body .main .greeting-container .family-container .main .prefix {
+  font-size: 12px;
+  margin-right: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+body .main .greeting-container .family-container .family {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+body .main .greeting-container .family-container .family .father {
+  margin-bottom: 10px;
+}
+
+body .main .greeting-container .family-container .family .prefix {
+  font-size: 12px;
+  margin-right: 10px;
+  font-weight: 500;
+  letter-spacing: 2px;
 }
 
 body .main .greeting-container .intro-people {
@@ -120,7 +189,7 @@ body .main .greeting-container .time-location-container .location {
 }
 
 body .gallery-container {
-  margin: 50px 0px;
+  margin: 80px 0px;
 }
 
 body .gallery-container .gallery-title {
@@ -196,6 +265,10 @@ body .share .share-container .share-item .label {
   margin-top: 10px;
 }
 
+body .location-map {
+  margin: 80px 0px;
+}
+
 body .location-map .map-title {
   font-family: "Nanum Pen Script", cursive;
   font-size: 30px;
@@ -209,11 +282,21 @@ body .location-map #nmap {
   margin: 0 auto;
 }
 
-body .location-map .map_intro {
-  margin: 0px auto;
+body .location-map .map-button {
+  margin: 5px auto;
   font-size: 12px;
   font-weight: 600;
   width: 90%;
+  text-align: center;
+}
+
+body .location-map .map_intro {
+  margin: 0px auto;
+  font-size: 12px;
+  font-weight: 500;
+  width: 90%;
+  font-family: "Nanum Myeongjo", serif;
+  color: #838383;
 }
 
 body .location-map .map_intro .more_map {
@@ -222,19 +305,76 @@ body .location-map .map_intro .more_map {
   text-decoration: underline;
 }
 
+body .location-map .direction-container {
+  margin: 10px auto;
+  width: 90%;
+}
+
+body .location-map .direction-container .direction {
+  margin: 10px 0;
+}
+
+body .location-map .direction-container .direction .dir-title {
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+body .location-map .direction-container .direction .dir-description {
+  font-size: 12px;
+  font-family: "Nanum Myeongjo", serif;
+  color: #838383;
+}
+
 body .location-map .time-location-container {
   margin: 10px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: 5px auto;
 }
 
-body .location-map .time-location-container .time,
-body .location-map .time-location-container .location {
+body .location-map .time-location-container .location-container {
+  text-align: left;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 60%;
+          flex: 1 0 60%;
+  margin: 20px 0 5px 0;
+}
+
+body .location-map .time-location-container .location-container .time,
+body .location-map .time-location-container .location-container .location {
   font-weight: 600;
+  font-size: 12px;
+  font-family: "Nanum Myeongjo", serif;
   word-break: keep-all;
 }
 
+body .location-map .time-location-container .location-container .address {
+  font-weight: 500;
+  font-size: 12px;
+  font-family: "Nanum Myeongjo", serif;
+}
+
+body .location-map .time-location-container .call {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 5px 5px 0;
+}
+
+body .location-map .time-location-container .call i {
+  color: #838383;
+  font-size: 20px;
+}
+
 body .calendar {
-  margin: 30px 0px;
+  margin: 60px 0px;
   text-align: center;
 }
 

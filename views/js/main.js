@@ -28,6 +28,8 @@ $(document).ready(function () {
         freeMove: false,
         thumbMargin: 0,
         vThumbWidth: 100,
+        prevHtml: '<i class="fas fa-chevron-circle-left"></i>',
+        nextHtml: '<i class="fas fa-chevron-circle-right"></i>',
         onSliderLoad: function () {
             $('#image-gallery').removeClass('cS-hidden');
         }
