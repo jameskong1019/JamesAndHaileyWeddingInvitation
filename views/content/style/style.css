@@ -113,7 +113,7 @@ body .main .greeting-text-container .opening-statement {
   margin: 40px 0px;
   font-size: 12px;
   font-weight: 500;
-  line-height: 50px;
+  line-height: 40px;
   letter-spacing: 2px;
 }
 
@@ -140,7 +140,7 @@ body .main .greeting-container .family-container {
 
 body .main .greeting-container .family-container .main {
   font-size: 15px;
-  display: inline-block;
+  display: block;
   margin-bottom: 20px;
   font-weight: 600;
   letter-spacing: 3px;
