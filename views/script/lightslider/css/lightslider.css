@@ -186,8 +186,8 @@
     left: 5px;
 }
 .lSAction > .lSNext {
-    background-position: -32px 0;
-    right: 5px;
+    background-position: 0 0;
+    right: -5px;
 }
 .lSAction > a.disabled {
     pointer-events: none;
