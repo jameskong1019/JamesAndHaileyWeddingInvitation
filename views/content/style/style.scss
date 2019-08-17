@@ -108,10 +108,10 @@ body {
 
             .opening-statement {
                 font-family: $main-myeong;
-                margin: 20px 0px;
+                margin: 40px 0px;
                 font-size: 12px;
                 font-weight: 500;
-                line-height: 30px;
+                line-height: 50px;
                 letter-spacing: 2px;
             }
         }
@@ -136,7 +136,8 @@ body {
                     display: inline-block;
                     margin-bottom: 20px;
                     font-weight: 600;
-
+                    letter-spacing: 3px;
+                    
                     .prefix {
                         font-size: 12px;
                         margin-right: 10px;
