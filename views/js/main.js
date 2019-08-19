@@ -7,6 +7,22 @@ myaudio.load();
 
 $(document).ready(function () {
 
+    myaudio.addEventListener("load", function () {
+        myaudio.play();
+    }, true);
+    
+    $('.music').on('click', function (e) {
+        e.preventDefault();
+        var music = $(myaudio);
+        if (myaudio.paused) {
+            $('#m_icon').attr('src', 'content/images/icon/music_on.png');
+            myaudio.play();
+        } else {
+            $('#m_icon').attr('src', 'content/images/icon/music_off.png');
+            myaudio.pause();
+        }
+    });
+
     $('body').sakura('start', {
         blowAnimations: [
             'blow-soft-left',
@@ -82,19 +98,6 @@ $(document).ready(function () {
 
         window.open(loc);
         return false;
-    });
-
-    $('.music').click();
-    $('.music').on('click', function (e) {
-        e.preventDefault();
-        var music = $(myaudio);
-        if (myaudio.paused) {
-            $('#m_icon').attr('src', 'content/images/icon/music_on.png');
-            myaudio.play();
-        } else {
-            $('#m_icon').attr('src', 'content/images/icon/music_off.png');
-            myaudio.pause();
-        }
     });
 
 });

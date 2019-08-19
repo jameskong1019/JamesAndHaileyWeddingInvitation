@@ -20,6 +20,10 @@ body .music img {
   width: 20px;
 }
 
+body .music #audio {
+  display: none;
+}
+
 body .header {
   text-align: center;
   margin: 10px 0px 5px 0px;
