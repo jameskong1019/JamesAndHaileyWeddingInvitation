@@ -52,7 +52,7 @@ body {
             margin: 5px 0px 10px 0px;
 
             .main-image {
-                width: 60%;
+                width: 70%;
             }
         }
 
@@ -81,8 +81,9 @@ body {
             }
 
             .wedding-date {
-                font-size: 12px;
+                font-size: 14px;
                 font-weight: 600;
+                letter-spacing: 2px;
             }
         }
 
@@ -109,9 +110,9 @@ body {
             .opening-statement {
                 font-family: $main-myeong;
                 margin: 40px 0px;
-                font-size: 12px;
-                font-weight: 500;
-                line-height: 40px;
+                font-size: 14px;
+                font-weight: 600;
+                line-height: 30px;
                 letter-spacing: 2px;
             }
         }
@@ -214,7 +215,7 @@ body {
             font-family: $main-cursive;
             font-size: 30px;
             text-align: center;
-            margin: 20px 0px;
+            margin: 40px 0px;
         }
 
         .share-container {
@@ -324,7 +325,7 @@ body {
                 .dir-description {
                     font-size: 12px;
                     font-family: $main-myeong;
-                    color: #838383;
+                    color: #4e4e4e;
                 }
             }
         }

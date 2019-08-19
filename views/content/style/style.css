@@ -55,7 +55,7 @@ body .main .main-image-container {
 }
 
 body .main .main-image-container .main-image {
-  width: 60%;
+  width: 70%;
 }
 
 body .main .main-greeting-container {
@@ -83,8 +83,9 @@ body .main .main-greeting-container .main-people .sub-text {
 }
 
 body .main .main-greeting-container .wedding-date {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
+  letter-spacing: 2px;
 }
 
 body .main .greeting-text-container {
@@ -111,9 +112,9 @@ body .main .greeting-text-container .greetings .big {
 body .main .greeting-text-container .opening-statement {
   font-family: "Nanum Myeongjo", serif;
   margin: 40px 0px;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 30px;
   letter-spacing: 2px;
 }
 
@@ -212,7 +213,7 @@ body .share .share-title {
   font-family: "Nanum Pen Script", cursive;
   font-size: 30px;
   text-align: center;
-  margin: 20px 0px;
+  margin: 40px 0px;
 }
 
 body .share .share-container {
@@ -324,7 +325,7 @@ body .location-map .direction-container .direction .dir-title {
 body .location-map .direction-container .direction .dir-description {
   font-size: 12px;
   font-family: "Nanum Myeongjo", serif;
-  color: #838383;
+  color: #4e4e4e;
 }
 
 body .location-map .time-location-container {
