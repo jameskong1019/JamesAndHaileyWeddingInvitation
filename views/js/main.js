@@ -1,5 +1,16 @@
+var myaudio = new Audio('content/mp3/bgm.mp3');
+myaudio.play();
+
 $(document).ready(function () {
-    // $('body').sakura();
+    $('.music').on('click', function (e) {
+        e.preventDefault();
+        var music = $(myaudio);
+        if (myaudio.paused) {
+            myaudio.play();
+        } else {
+            myaudio.pause();
+        }
+    });
 
     $('body').sakura('start', {
         blowAnimations: [
@@ -68,10 +79,9 @@ $(document).ready(function () {
             loc = '//www.facebook.com/sharer/sharer.php?u=' + href + '&t=' + title;
         } else if (sns_type == 'kakaostory') {
             loc = 'https://story.kakao.com/share?url=' + encodeURIComponent(href);
-        } else if ( sns_type == 'band' ) {
-			loc = 'http://www.band.us/plugin/share?body='+encodeURIComponent(title)+'%0A'+encodeURIComponent(href);
-		}
-        else {
+        } else if (sns_type == 'band') {
+            loc = 'http://www.band.us/plugin/share?body=' + encodeURIComponent(title) + '%0A' + encodeURIComponent(href);
+        } else {
             return false;
         }
 

@@ -9,6 +9,17 @@ body {
   overflow-x: hidden;
 }
 
+body .music {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 2;
+}
+
+body .music img {
+  width: 20px;
+}
+
 body .header {
   text-align: center;
   margin: 10px 0px 5px 0px;
