@@ -1,16 +1,11 @@
-var myaudio = new Audio('content/mp3/bgm.mp3');
-myaudio.play();
+var source = 'content/mp3/bgm.mp3';
+var myaudio = document.createElement("audio");
+myaudio.autoplay = true;
+myaudio.loop = true;
+myaudio.src = source;
+myaudio.load();
 
 $(document).ready(function () {
-    $('.music').on('click', function (e) {
-        e.preventDefault();
-        var music = $(myaudio);
-        if (myaudio.paused) {
-            myaudio.play();
-        } else {
-            myaudio.pause();
-        }
-    });
 
     $('body').sakura('start', {
         blowAnimations: [
@@ -87,6 +82,19 @@ $(document).ready(function () {
 
         window.open(loc);
         return false;
+    });
+
+    $('.music').click();
+    $('.music').on('click', function (e) {
+        e.preventDefault();
+        var music = $(myaudio);
+        if (myaudio.paused) {
+            $('#m_icon').attr('src', 'content/images/icon/music_on.png');
+            myaudio.play();
+        } else {
+            $('#m_icon').attr('src', 'content/images/icon/music_off.png');
+            myaudio.pause();
+        }
     });
 
 });
