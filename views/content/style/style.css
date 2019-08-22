@@ -28,14 +28,14 @@ body .music #audio {
 
 body .music .bubble {
   position: absolute;
-  width: 85px;
+  width: 60px;
   height: 35px;
   text-align: center;
   padding: 0px;
   background: #FFFFFF;
   border-radius: 14px;
-  font-size: 14px;
-  border: #DAD93A solid 3px;
+  font-size: 17px;
+  border: #f3f124 solid 3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -47,7 +47,7 @@ body .music .bubble {
           justify-content: center;
   bottom: 40px;
   right: -5px;
-  font-family: "Pinyon Script", cursive;
+  font-family: "Nanum Pen Script", cursive;
   color: black;
 }
 
@@ -69,7 +69,7 @@ body .music .bubble:before {
   position: absolute;
   border-style: solid;
   border-width: 14px 11px 0;
-  border-color: #DAD93A transparent;
+  border-color: #f3f124 transparent;
   display: block;
   width: 0;
   z-index: 0;
@@ -187,7 +187,7 @@ body .main .greeting-text-container .opening-statement {
 }
 
 body .main .greeting-container {
-  padding: 20px 10px;
+  padding: 20px 0px;
   margin: 10px;
   background: rgba(255, 231, 114, 0.21);
   border: 2px solid rgba(254, 226, 93, 0.5);
@@ -204,7 +204,7 @@ body .main .greeting-container .family-container {
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
   font-family: "Nanum Myeongjo", serif;
-  letter-spacing: 7px;
+  letter-spacing: 5px;
 }
 
 body .main .greeting-container .family-container .main {
@@ -265,6 +265,19 @@ body .divider {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .divider .text {
+  text-align: center;
+  font-family: "Stylish", sans-serif;
+  margin: 0 20px;
+}
+
+body .divider .divider-image {
+  width: 30px;
 }
 
 body .gallery-container {
