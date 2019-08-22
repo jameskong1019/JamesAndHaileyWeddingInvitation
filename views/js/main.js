@@ -14,6 +14,7 @@ $(document).ready(function () {
     $('.music').on('click', function (e) {
         e.preventDefault();
         var music = $(myaudio);
+        $(".bubble").hide();
         if (myaudio.paused) {
             $('#m_icon').attr('src', 'content/images/icon/music_on.png');
             myaudio.play();
